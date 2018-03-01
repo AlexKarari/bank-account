@@ -16,6 +16,7 @@ $(document).ready(function(){
     var initialDeposit = $("input#initialdeposit").val();
     var newAccount = new Account(name, initialDeposit);
 
-    $("ul#details").append("<li><span class='display'>"+ newAccount.accountDetails() + "</span></li>");
+    $("h3#balance").after("Ksh."+ newAccount.initialDeposit);
+  //  $("ul#details").append("<li><span class='display'>"+ newAccount.accountDetails() + "</span></li>");
   });
 });
